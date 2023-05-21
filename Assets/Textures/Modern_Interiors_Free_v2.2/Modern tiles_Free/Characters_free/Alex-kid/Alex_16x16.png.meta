@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -212,7 +212,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_4
+      name: Alex_16x16_Idle_Right_0
       rect:
         serializedVersion: 2
         x: 1
@@ -233,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_5
+      name: Alex_16x16_Idle_Right_1
       rect:
         serializedVersion: 2
         x: 17
@@ -254,7 +254,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_6
+      name: Alex_16x16_Idle_Right_2
       rect:
         serializedVersion: 2
         x: 33
@@ -275,7 +275,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_7
+      name: Alex_16x16_Idle_Right_3
       rect:
         serializedVersion: 2
         x: 49
@@ -296,7 +296,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_8
+      name: Alex_16x16_Idle_Right_4
       rect:
         serializedVersion: 2
         x: 65
@@ -317,7 +317,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_9
+      name: Alex_16x16_Idle_Right_5
       rect:
         serializedVersion: 2
         x: 81
@@ -338,7 +338,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_11
+      name: Alex_16x16_Idle_Left_0
       rect:
         serializedVersion: 2
         x: 193
@@ -359,7 +359,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_12
+      name: Alex_16x16_Idle_Left_1
       rect:
         serializedVersion: 2
         x: 209
@@ -380,7 +380,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_13
+      name: Alex_16x16_Idle_Left_2
       rect:
         serializedVersion: 2
         x: 225
@@ -401,7 +401,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_14
+      name: Alex_16x16_Idle_Left_3
       rect:
         serializedVersion: 2
         x: 241
@@ -422,7 +422,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_15
+      name: Alex_16x16_Idle_Left_4
       rect:
         serializedVersion: 2
         x: 257
@@ -443,7 +443,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_16
+      name: Alex_16x16_Idle_Left_5
       rect:
         serializedVersion: 2
         x: 273
@@ -464,7 +464,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_18
+      name: Alex_16x16_Walk_Right_0
       rect:
         serializedVersion: 2
         x: 1
@@ -485,7 +485,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_19
+      name: Alex_16x16_Walk_Right_1
       rect:
         serializedVersion: 2
         x: 17
@@ -506,7 +506,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_20
+      name: Alex_16x16_Walk_Right_2
       rect:
         serializedVersion: 2
         x: 33
@@ -527,7 +527,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_21
+      name: Alex_16x16_Walk_Right_3
       rect:
         serializedVersion: 2
         x: 49
@@ -548,7 +548,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_22
+      name: Alex_16x16_Walk_Right_4
       rect:
         serializedVersion: 2
         x: 65
@@ -569,7 +569,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_23
+      name: Alex_16x16_Walk_Right_5
       rect:
         serializedVersion: 2
         x: 81
@@ -590,7 +590,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_24
+      name: Alex_16x16_Walk_Up_0
       rect:
         serializedVersion: 2
         x: 96
@@ -611,7 +611,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_25
+      name: Alex_16x16_Walk_Up_1
       rect:
         serializedVersion: 2
         x: 112
@@ -632,7 +632,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_26
+      name: Alex_16x16_Walk_Up_2
       rect:
         serializedVersion: 2
         x: 128
@@ -653,7 +653,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_27
+      name: Alex_16x16_Walk_Up_3
       rect:
         serializedVersion: 2
         x: 145
@@ -674,7 +674,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_28
+      name: Alex_16x16_Walk_Up_4
       rect:
         serializedVersion: 2
         x: 160
@@ -695,7 +695,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_29
+      name: Alex_16x16_Walk_Up_5
       rect:
         serializedVersion: 2
         x: 177
@@ -716,7 +716,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_30
+      name: Alex_16x16_Walk_Left_0
       rect:
         serializedVersion: 2
         x: 193
@@ -737,7 +737,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_31
+      name: Alex_16x16_Walk_Left_1
       rect:
         serializedVersion: 2
         x: 209
@@ -758,7 +758,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_32
+      name: Alex_16x16_Walk_Left_2
       rect:
         serializedVersion: 2
         x: 225
@@ -779,7 +779,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_33
+      name: Alex_16x16_Walk_Left_3
       rect:
         serializedVersion: 2
         x: 241
@@ -800,7 +800,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_34
+      name: Alex_16x16_Walk_Left_4
       rect:
         serializedVersion: 2
         x: 257
@@ -821,7 +821,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_35
+      name: Alex_16x16_Walk_Left_5
       rect:
         serializedVersion: 2
         x: 273
@@ -842,7 +842,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_36
+      name: Alex_16x16_Walk_Down_0
       rect:
         serializedVersion: 2
         x: 289
@@ -863,7 +863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_37
+      name: Alex_16x16_Walk_Down_1
       rect:
         serializedVersion: 2
         x: 305
@@ -884,28 +884,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_38
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 129
-        width: 30
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba1d0c8f5c1bd2a499ec4c75e7179369
-      internalID: 2145496257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Alex_16x16_39
+      name: Alex_16x16_Walk_Down_4
       rect:
         serializedVersion: 2
         x: 352
@@ -926,7 +905,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_40
+      name: Alex_16x16_Walk_Down_5
       rect:
         serializedVersion: 2
         x: 368
@@ -947,7 +926,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_41
+      name: Alex_16x16_Sit1_Right_0
       rect:
         serializedVersion: 2
         x: 7
@@ -968,7 +947,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_42
+      name: Alex_16x16_Sit1_Right_1
       rect:
         serializedVersion: 2
         x: 39
@@ -989,7 +968,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_43
+      name: Alex_16x16_Sit1_Right_2
       rect:
         serializedVersion: 2
         x: 71
@@ -1010,7 +989,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_44
+      name: Alex_16x16_Sit1_Right_3
       rect:
         serializedVersion: 2
         x: 103
@@ -1031,7 +1010,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_45
+      name: Alex_16x16_Sit1_Right_4
       rect:
         serializedVersion: 2
         x: 135
@@ -1052,7 +1031,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_46
+      name: Alex_16x16_Sit1_Right_5
       rect:
         serializedVersion: 2
         x: 167
@@ -1073,7 +1052,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_47
+      name: Alex_16x16_Sit1_Left_0
       rect:
         serializedVersion: 2
         x: 203
@@ -1094,7 +1073,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_48
+      name: Alex_16x16_Sit1_Left_1
       rect:
         serializedVersion: 2
         x: 235
@@ -1115,7 +1094,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_49
+      name: Alex_16x16_Sit1_Left_2
       rect:
         serializedVersion: 2
         x: 267
@@ -1136,7 +1115,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_50
+      name: Alex_16x16_Sit1_Left_3
       rect:
         serializedVersion: 2
         x: 299
@@ -1157,7 +1136,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_51
+      name: Alex_16x16_Sit1_Left_4
       rect:
         serializedVersion: 2
         x: 331
@@ -1178,7 +1157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_52
+      name: Alex_16x16_Sit1_Left_5
       rect:
         serializedVersion: 2
         x: 363
@@ -1199,7 +1178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_65
+      name: Alex_16x16_Sit2_Right_0
       rect:
         serializedVersion: 2
         x: 2
@@ -1220,7 +1199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_66
+      name: Alex_16x16_Sit2_Right_1
       rect:
         serializedVersion: 2
         x: 18
@@ -1241,7 +1220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_67
+      name: Alex_16x16_Sit2_Right_2
       rect:
         serializedVersion: 2
         x: 34
@@ -1262,7 +1241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_68
+      name: Alex_16x16_Sit2_Right_3
       rect:
         serializedVersion: 2
         x: 50
@@ -1283,7 +1262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_69
+      name: Alex_16x16_Sit2_Right_4
       rect:
         serializedVersion: 2
         x: 66
@@ -1304,28 +1283,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_70
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 33
-        width: 28
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c94837c42eb6815408820a93f7950ae7
-      internalID: -859028543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Alex_16x16_71
+      name: Alex_16x16_Sit2_Left_1
       rect:
         serializedVersion: 2
         x: 112
@@ -1346,7 +1304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_72
+      name: Alex_16x16_Sit2_Left_2
       rect:
         serializedVersion: 2
         x: 128
@@ -1367,7 +1325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_73
+      name: Alex_16x16_Sit2_Left_3
       rect:
         serializedVersion: 2
         x: 144
@@ -1388,7 +1346,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_74
+      name: Alex_16x16_Sit2_Left_4
       rect:
         serializedVersion: 2
         x: 160
@@ -1409,7 +1367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_75
+      name: Alex_16x16_Sit2_Left_5
       rect:
         serializedVersion: 2
         x: 176
@@ -1430,7 +1388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_76
+      name: Alex_16x16_Pickup_0
       rect:
         serializedVersion: 2
         x: 1
@@ -1451,7 +1409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_77
+      name: Alex_16x16_Pickup_1
       rect:
         serializedVersion: 2
         x: 17
@@ -1472,7 +1430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_78
+      name: Alex_16x16_Pickup_2
       rect:
         serializedVersion: 2
         x: 33
@@ -1493,7 +1451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_79
+      name: Alex_16x16_Pickup_3
       rect:
         serializedVersion: 2
         x: 49
@@ -1514,7 +1472,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_80
+      name: Alex_16x16_Pickup_4
       rect:
         serializedVersion: 2
         x: 65
@@ -1535,12 +1493,54 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_81
+      name: Alex_16x16_Idle_Up_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 0
-        width: 15
+        x: 96
+        y: 160
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a61f5006f422e940be176f348a1d88e
+      internalID: -1570054821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Up_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403fe1b874b7c5f44aa115a4e64486d5
+      internalID: -586404167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Up_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
         height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1549,19 +1549,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9acc653ee5b873740a5bc57792aaf294
-      internalID: 1749619850
+      spriteID: 486d08299c44fa1418c49d5a31918f41
+      internalID: -1008337301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_82
+      name: Alex_16x16_Idle_Up_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 15
+        x: 144
+        y: 160
+        width: 16
         height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1570,18 +1570,186 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8c4a44da5762b840beb26e6221ec182
-      internalID: -1103492860
+      spriteID: fa330c98f3b618c4a814043f71c4ebbd
+      internalID: 1419785465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_83
+      name: Alex_16x16_Idle_Up_4
       rect:
         serializedVersion: 2
-        x: 113
-        y: 0
+        x: 160
+        y: 160
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c733685e5234c3a41adcdcf24d85e206
+      internalID: -1516406224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Up_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0beafc0c10fa44883884cc88f78ab5
+      internalID: 677639710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Down_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9ead72d31d6174398214c8327f8805
+      internalID: -1451752175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Down_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fa8d73f837e414d864c8ebbe894a5e
+      internalID: -1814526801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Down_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51aca75cf7d90d94b97187e6492ec4d7
+      internalID: -2145627331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Down_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2e9d7ae42b16a4091f5ca648a9bd3d
+      internalID: -1039406973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Down_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f920617ffe632e40a94abec3551343f
+      internalID: 904511884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Idle_Down_5
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 160
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b40382e475523746bfa41737475c956
+      internalID: -850649815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Walk_Down_2
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 129
         width: 15
         height: 22
       alignment: 0
@@ -1591,18 +1759,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a284c274df98ff47aee95015e4e1b67
-      internalID: -610569342
+      spriteID: 25f7f3f0ba8769f4ea65b48636a0244d
+      internalID: -59284828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alex_16x16_84
+      name: Alex_16x16_Walk_Down_3
       rect:
         serializedVersion: 2
-        x: 129
-        y: 0
+        x: 336
+        y: 129
         width: 15
         height: 22
       alignment: 0
@@ -1612,8 +1780,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4c9b361a829ece4b912ba381ad12cce
-      internalID: 441034739
+      spriteID: 5b101b063b6d1ae4b967153c5975c0d5
+      internalID: -598322280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Sit2_Right_05
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 33
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0664ea99aee38489ea2510c4a0634c
+      internalID: -263376788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex_16x16_Sit2_Left_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 33
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928369b4dd7781a44b2a329530e72691
+      internalID: 694864495
       vertices: []
       indices: 
       edges: []
@@ -1629,91 +1839,107 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Alex_16x16_16: 1106998496
-      Alex_16x16_31: 301643189
-      Alex_16x16_70: -859028543
-      Alex_16x16_61: 1703791153
-      Alex_16x16_13: -2070864813
-      Alex_16x16_81: 1749619850
-      Alex_16x16_72: -455240253
-      Alex_16x16_7: 1803488909
+      Alex_16x16_Sit1_Left_4: 237383288
+      Alex_16x16_Idle_Left_3: -229158641
+      Alex_16x16_Walk_Left_5: -671628556
+      Alex_16x16_Idle_Down_4: -850649815
       Alex_16x16_57: -920482342
-      Alex_16x16_43: -343026652
-      Alex_16x16_5: -899818617
-      Alex_16x16_Up: 155921376
-      Alex_16x16_19: -1162539842
-      Alex_16x16_51: -1807175480
-      Alex_16x16_23: 2040718367
-      Alex_16x16_22: -140153469
-      Alex_16x16_38: 2145496257
-      Alex_16x16_32: 836786757
-      Alex_16x16_15: -229158641
-      Alex_16x16_45: -948040
-      Alex_16x16_48: 530051983
+      Alex_16x16_Sit2_Right_3: 1720800955
+      Alex_16x16_Idle_Up_5: 1028664797
+      Alex_16x16_Sit1_Left_0: 530051983
+      Alex_16x16_Pickup_1: -1834517346
+      Alex_16x16_Idle_Up_3: -1516406224
+      Alex_16x16_Walk_Left_4: -997100167
       Alex_16x16_83: -610569342
-      Alex_16x16_46: 2112117256
-      Alex_16x16_58: 1233109261
-      Alex_16x16_52: 237383288
-      Alex_16x16_65: -995011600
-      Alex_16x16_Right: -751458773
-      Alex_16x16_68: 1305053799
-      Alex_16x16_27: 1791828757
-      Alex_16x16_67: 1720800955
-      Alex_16x16_4: -1539933321
-      Alex_16x16_10: 930259693
-      Alex_16x16_78: 1758773999
-      Alex_16x16_24: -546249590
-      Alex_16x16_44: 615774539
-      Alex_16x16_33: 1292051401
-      Alex_16x16_64: 1771753655
-      Alex_16x16_66: 836542179
-      Alex_16x16_12: 1877092239
-      Alex_16x16_28: -1725818281
-      Alex_16x16_11: 1028664797
-      Alex_16x16_79: 803976676
-      Alex_16x16_41: -864920023
-      Alex_16x16_80: 156027705
+      Alex_16x16_Sit1_Left_2: 1656137690
+      Alex_16x16_Sit1_Right_5: 561066864
+      Alex_16x16_Sit1_Right_3: -948040
+      Alex_16x16_Sit2_Right_1: 694864495
+      Alex_16x16_Sit1_Left_1: 1521767083
+      Alex_16x16_Pickup_3: 803976676
+      Alex_16x16_Walk_Right_4: 2040718367
+      Alex_16x16_Walk_Up_2: 1791828757
+      Alex_16x16_Walk_Down_3: 2123780182
+      Alex_16x16_Walk_Right_1: 17423689
+      Alex_16x16_Sit2_Right_2: 836542179
+      Alex_16x16_Walk_Down_0: -1769450442
+      Alex_16x16_Idle_Up_0: -586404167
+      Alex_16x16_Idle_Right_1: -260677074
+      Alex_16x16_Walk_Left_2: 1292051401
+      Alex_16x16_Pickup_0: 2029804405
       Alex_16x16_82: -1103492860
-      Alex_16x16_77: -1834517346
-      Alex_16x16_30: -626025189
-      Alex_16x16_60: -1838312094
-      Alex_16x16_73: 487364405
-      Alex_16x16_34: 1890387205
-      Alex_16x16_53: 2086399627
-      Alex_16x16_14: 1842714977
-      Alex_16x16_35: -997100167
-      Alex_16x16_47: 561066864
-      Alex_16x16_63: 2145671540
-      Alex_16x16_9: 582433474
-      Alex_16x16_50: 1656137690
-      Alex_16x16_69: -731111724
-      Alex_16x16_54: -4278322
-      Alex_16x16_Left: 401906359
-      Alex_16x16_55: -1124221219
-      Alex_16x16_17: -352704149
-      Alex_16x16_20: 17423689
-      Alex_16x16_6: -260677074
-      Alex_16x16_21: -77235390
-      Alex_16x16_37: -1769450442
-      Alex_16x16_56: -1865445636
-      Alex_16x16_26: 951609654
-      Alex_16x16_29: 295183466
-      Alex_16x16_Down: 2011669925
-      Alex_16x16_71: 683453784
-      Alex_16x16_62: -1248320256
-      Alex_16x16_84: 441034739
-      Alex_16x16_74: 954954135
-      Alex_16x16_36: -671628556
-      Alex_16x16_49: 1521767083
-      Alex_16x16_8: 444338250
-      Alex_16x16_25: -1736471687
-      Alex_16x16_18: 827284518
-      Alex_16x16_42: -1224574746
-      Alex_16x16_40: 2092166575
-      Alex_16x16_59: -72673
-      Alex_16x16_75: -2007498579
-      Alex_16x16_76: 2029804405
-      Alex_16x16_39: 2123780182
+      Alex_16x16_Sit2_Left_1: -455240253
+      Alex_16x16_Pickup_2: 1758773999
+      Alex_16x16_60: 2086399627
+      Alex_16x16_Idle_Down_0: -1814526801
+      Alex_16x16_53: 2145671540
+      Alex_16x16_54: 401906359
+      Alex_16x16_63: -4278322
+      Alex_16x16_84: -72673
+      Alex_16x16_Idle_Down_5: 827284518
+      Alex_16x16_Sit1_Right_0: -1224574746
+      Alex_16x16_Walk_Left_3: 1890387205
+      Alex_16x16_Sit2_Right_0: 694864495
+      Alex_16x16_Walk_Left_0: 301643189
+      Alex_16x16_56: 2011669925
+      Alex_16x16_Down: -1248320256
+      Alex_16x16_Sit2_Left_3: 954954135
+      Alex_16x16_Sit2_Right_4: 1305053799
+      Alex_16x16_Walk_Up_1: 951609654
+      Alex_16x16_Walk_Down_4: 2092166575
+      Alex_16x16_Pickup_4: 156027705
+      Alex_16x16_Walk_Down_2: -598322280
+      Alex_16x16_Walk_Up_5: -626025189
+      Alex_16x16_70: -859028543
+      Alex_16x16_Sit2_Left_0: 683453784
+      Alex_16x16_61: 1703791153
+      Alex_16x16_Walk_Right_0: -1162539842
+      Alex_16x16_Walk_Up_0: -1736471687
+      Alex_16x16_Sit2_Left_5: 2029804405
+      Alex_16x16_Up: 155921376
+      Alex_16x16_58: 1233109261
+      Alex_16x16_38: 2145496257
+      Alex_16x16_Idle_Down_3: 904511884
+      Alex_16x16_Idle_Up_1: -1008337301
+      Alex_16x16_Sit1_Right_4: 2112117256
+      Alex_16x16_Idle_Right_3: 444338250
+      Alex_16x16_Idle_Right_4: 582433474
+      Alex_16x16_Right: -751458773
+      Alex_16x16_Idle_Right_0: -899818617
+      Alex_16x16_Idle_Right_2: 1803488909
+      Alex_16x16_Sit1_Left_3: -1807175480
+      Alex_16x16_Idle_Down_2: -1039406973
+      Alex_16x16_Walk_Up_4: 295183466
+      Alex_16x16_10: 930259693
+      Alex_16x16_64: 1771753655
+      Alex_16x16_Sit2_Left_2: 487364405
+      Alex_16x16_Idle_Down_1: -2145627331
+      Alex_16x16_Sit1_Left_5: -995011600
+      Alex_16x16_Sit2_Left_4: -2007498579
+      Alex_16x16_Idle_Left_0: 1877092239
+      Alex_16x16_Idle_Left_5: -1451752175
+      Alex_16x16_Walk_Left_1: 836786757
+      Alex_16x16_Idle_Right_5: -1570054821
+      Alex_16x16_Walk_Right_3: -140153469
+      Alex_16x16_Idle_Up_2: 1419785465
+      Alex_16x16_Idle_Left_2: 1842714977
+      Alex_16x16_55: -352704149
+      Alex_16x16_Walk_Right_5: -546249590
+      Alex_16x16_Idle_Left_1: -2070864813
+      Alex_16x16_Walk_Right_2: -77235390
+      Alex_16x16_Sit1_Right_2: 615774539
+      Alex_16x16_Left: -1124221219
+      Alex_16x16_Pickup_5: 1749619850
+      Alex_16x16_Idle_Up_4: 677639710
+      Alex_16x16_17: -1865445636
+      Alex_16x16_Walk_Up_3: -1725818281
+      Alex_16x16_Sit2_Right_05: -731111724
+      Alex_16x16_Walk_Down_5: -864920023
+      Alex_16x16_62: 441034739
+      Alex_16x16_Idle_Left_4: 1106998496
+      Alex_16x16_Walk_Down_1: -59284828
+      Alex_16x16_Sit1_Right_1: -343026652
+      Alex_16x16_59: -1539933321
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
