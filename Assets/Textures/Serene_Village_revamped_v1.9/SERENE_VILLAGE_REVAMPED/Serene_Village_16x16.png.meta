@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -15553,13 +15553,13 @@ TextureImporter:
       Serene_Village_16x16_262: -522266853
       Serene_Village_16x16_327: -1618334397
       Serene_Village_16x16_155: 1694818987
-      Serene_Village_16x16_54: 810541521
       Serene_Village_16x16_230: 15302002
-      Serene_Village_16x16_142: -390034448
+      Serene_Village_16x16_54: 810541521
       Serene_Village_16x16_239: 886580733
+      Serene_Village_16x16_142: -390034448
+      Serene_Village_16x16_374: -1744744389
       Serene_Village_16x16_553: 1172951640
       Serene_Village_16x16_228: -1088285615
-      Serene_Village_16x16_374: -1744744389
       Serene_Village_16x16_548: 1972696140
       Serene_Village_16x16_729: -92998578
       Serene_Village_16x16_542: 1379288791
@@ -15571,9 +15571,9 @@ TextureImporter:
       Serene_Village_16x16_43: 812279881
       Serene_Village_16x16_449: 1379091166
       Serene_Village_16x16_363: 1812323459
-      Serene_Village_16x16_504: 800011169
       Serene_Village_16x16_583: 1702084271
       Serene_Village_16x16_681: -324306858
+      Serene_Village_16x16_504: 800011169
       Serene_Village_16x16_522: -2013307659
       Serene_Village_16x16_547: 1354767482
       Serene_Village_16x16_41: -719260565
@@ -15678,8 +15678,8 @@ TextureImporter:
       Serene_Village_16x16_498: -1433841106
       Serene_Village_16x16_73: 1381011597
       Serene_Village_16x16_491: -1360915815
-      Serene_Village_16x16_526: -347580833
       Serene_Village_16x16_682: 305708787
+      Serene_Village_16x16_526: -347580833
       Serene_Village_16x16_115: 2113445630
       Serene_Village_16x16_208: 1933214688
       Serene_Village_16x16_518: 232108632
@@ -15744,8 +15744,8 @@ TextureImporter:
       Serene_Village_16x16_486: 1600270749
       Serene_Village_16x16_452: 1542371679
       Serene_Village_16x16_174: -1129464011
-      Serene_Village_16x16_210: -638041286
       Serene_Village_16x16_298: -1744640108
+      Serene_Village_16x16_210: -638041286
       Serene_Village_16x16_717: -975864557
       Serene_Village_16x16_36: 88270026
       Serene_Village_16x16_727: -1857364791
@@ -15775,8 +15775,8 @@ TextureImporter:
       Serene_Village_16x16_279: 110413589
       Serene_Village_16x16_507: 892522315
       Serene_Village_16x16_677: -1009499669
-      Serene_Village_16x16_435: -2123749258
       Serene_Village_16x16_609: -1996505627
+      Serene_Village_16x16_435: -2123749258
       Serene_Village_16x16_125: -1885556083
       Serene_Village_16x16_508: -600391340
       Serene_Village_16x16_611: 711313841
@@ -15792,8 +15792,8 @@ TextureImporter:
       Serene_Village_16x16_123: -677661952
       Serene_Village_16x16_164: -1971219258
       Serene_Village_16x16_631: -172714028
-      Serene_Village_16x16_633: 1499168715
       Serene_Village_16x16_694: -1603385599
+      Serene_Village_16x16_633: 1499168715
       Serene_Village_16x16_579: 1893056478
       Serene_Village_16x16_641: -240637869
       Serene_Village_16x16_52: -1949040663
@@ -15807,8 +15807,8 @@ TextureImporter:
       Serene_Village_16x16_102: 1538364377
       Serene_Village_16x16_443: -1433195825
       Serene_Village_16x16_460: -661990026
-      Serene_Village_16x16_524: -160851055
       Serene_Village_16x16_635: -263547487
+      Serene_Village_16x16_524: -160851055
       Serene_Village_16x16_329: -485469535
       Serene_Village_16x16_381: 2064483433
       Serene_Village_16x16_133: -934478320
@@ -15906,11 +15906,11 @@ TextureImporter:
       Serene_Village_16x16_480: 1289778768
       Serene_Village_16x16_188: 1926161297
       Serene_Village_16x16_303: 1360804584
-      Serene_Village_16x16_26: 3165558
-      Serene_Village_16x16_288: 150236858
       Serene_Village_16x16_405: -519679512
+      Serene_Village_16x16_26: 3165558
       Serene_Village_16x16_354: 652587342
       Serene_Village_16x16_234: -1411842316
+      Serene_Village_16x16_288: 150236858
       Serene_Village_16x16_224: 977553335
       Serene_Village_16x16_401: -586802796
       Serene_Village_16x16_16: 1754974201
@@ -15922,8 +15922,8 @@ TextureImporter:
       Serene_Village_16x16_94: 612556665
       Serene_Village_16x16_292: -23503327
       Serene_Village_16x16_44: 1098200110
-      Serene_Village_16x16_397: -1911970399
       Serene_Village_16x16_458: 542384303
+      Serene_Village_16x16_397: -1911970399
       Serene_Village_16x16_467: 1204501848
       Serene_Village_16x16_366: 193738875
       Serene_Village_16x16_613: 327457066
@@ -16012,9 +16012,9 @@ TextureImporter:
       Serene_Village_16x16_330: -737456341
       Serene_Village_16x16_70: 628306835
       Serene_Village_16x16_12: 628853793
-      Serene_Village_16x16_85: -576879544
-      Serene_Village_16x16_654: 748939183
       Serene_Village_16x16_336: 1817287983
+      Serene_Village_16x16_654: 748939183
+      Serene_Village_16x16_85: -576879544
       Serene_Village_16x16_597: -1345867401
       Serene_Village_16x16_643: -1834748424
       Serene_Village_16x16_53: 561297286
@@ -16145,9 +16145,9 @@ TextureImporter:
       Serene_Village_16x16_623: -1333179283
       Serene_Village_16x16_711: -472119107
       Serene_Village_16x16_307: -777145770
+      Serene_Village_16x16_488: 1056788824
       Serene_Village_16x16_28: -1517178050
       Serene_Village_16x16_512: 1995094696
-      Serene_Village_16x16_488: 1056788824
       Serene_Village_16x16_606: -1475773226
       Serene_Village_16x16_266: 1948959733
       Serene_Village_16x16_350: 1787409482
@@ -16190,15 +16190,15 @@ TextureImporter:
       Serene_Village_16x16_268: -1741341819
       Serene_Village_16x16_281: -1686911753
       Serene_Village_16x16_18: 2054746146
-      Serene_Village_16x16_92: 1222316197
       Serene_Village_16x16_495: 565424345
-      Serene_Village_16x16_499: 1283971692
+      Serene_Village_16x16_92: 1222316197
       Serene_Village_16x16_513: 267930441
       Serene_Village_16x16_511: -1211174112
       Serene_Village_16x16_440: 1519420777
       Serene_Village_16x16_543: 998067382
       Serene_Village_16x16_562: 1390923861
       Serene_Village_16x16_667: -893980660
+      Serene_Village_16x16_499: 1283971692
       Serene_Village_16x16_599: -1846196157
       Serene_Village_16x16_203: -1489212358
       Serene_Village_16x16_31: -1644027775
