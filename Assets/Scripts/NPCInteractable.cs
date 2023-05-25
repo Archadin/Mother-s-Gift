@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NPCInteractable : MonoBehaviour, IInteractable
 {
@@ -15,24 +16,24 @@ public class NPCInteractable : MonoBehaviour, IInteractable
 
     public event EventHandler OnLinesFinished;
 
+    public UnityEvent OnConversationFinishedEvent;
+
     [SerializeField] private List<SimpleConversation> Lines = new List<SimpleConversation>();
 
     // a field for text and text buble. that asks for player input.
-    private bool hasSpoken = false;
 
     private bool LinesFinished = false;
 
+    private int LineIndex = 0;
     private int currentLine;
+
+    private bool canInteract = false;
 
     public void Interact()
     {
         if (Lines.Count == 0) return;
+        if (!canInteract) return;
 
-        if (LinesFinished)
-        {
-        }
-
-        hasSpoken = currentLine > 0;
         OnInteractEvent?.Invoke(this, EventArgs.Empty);
         currentLine = Lines[currentLine].resetConversation ? 0 : currentLine + 1;
 
@@ -41,7 +42,13 @@ public class NPCInteractable : MonoBehaviour, IInteractable
             currentLine = Lines.Count - 1;
             LinesFinished = true;
             OnLinesFinished?.Invoke(this, EventArgs.Empty);
+            OnConversationFinishedEvent?.Invoke();
         }
+    }
+
+    public void SetCanInteract(bool enabled)
+    {
+        canInteract = enabled;
     }
 
     public string GetCurrentLine()

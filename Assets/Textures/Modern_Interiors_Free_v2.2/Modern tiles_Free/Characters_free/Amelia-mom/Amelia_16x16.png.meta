@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1950,9 +1950,9 @@ TextureImporter:
       Amelia_16x16_Walk_Right_3: -2054412941
       Amelia_16x16_69: 670409464
       Amelia_16x16_54: -1175263189
-      Amelia_16x16_Idle_Down_2: 165391145
-      Amelia_16x16_Walk_Right_5: 1004897348
       Amelia_16x16_Sit2_Left_3: 552826527
+      Amelia_16x16_Walk_Right_5: 1004897348
+      Amelia_16x16_Idle_Down_2: 165391145
       Amelia_16x16_Idle_Left_5: -1079686912
       Amelia_16x16_Idle_Right_2: 162174695
       Amelia_16x16_Idle_Left_4: 123226345

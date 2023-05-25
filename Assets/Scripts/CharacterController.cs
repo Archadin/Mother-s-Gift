@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+    private const string IDLE_H = "Idle_H";
+    private const string IDLE_V = "Idle_V";
     private const string SPEED = "Speed";
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
@@ -12,12 +14,18 @@ public class CharacterController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
+    private Vector2 lastMovement;
 
     [SerializeField] private Sprite upSprite;
     [SerializeField] private Sprite downSprite;
     [SerializeField] private Sprite rightSprite;
     [SerializeField] private Sprite leftSprite;
     [SerializeField] private LayerMask interactableLayer;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Start is called before the first frame update
     private void Start()
@@ -52,23 +60,14 @@ public class CharacterController : MonoBehaviour
 
     private void SetSprite()
     {
-        if (movement.sqrMagnitude > .01f) return;
-        if (movement.x > 0)
+        if (movement.sqrMagnitude > 0)
         {
-            spriteRenderer.sprite = rightSprite;
+            lastMovement = movement;
         }
-        else if (movement.x < 0)
+        if (movement == Vector2.zero)
         {
-            spriteRenderer.sprite = leftSprite;
-        }
-
-        if (movement.y > 0)
-        {
-            spriteRenderer.sprite = upSprite;
-        }
-        else if (movement.y < 0)
-        {
-            spriteRenderer.sprite = downSprite;
+            animator.SetFloat(IDLE_H, lastMovement.x);
+            animator.SetFloat(IDLE_V, lastMovement.y);
         }
     }
 
