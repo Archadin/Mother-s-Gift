@@ -35,7 +35,6 @@ public class SceneLoader : MonoBehaviour
     {
         if (previousScene == null) return;
         if (player == null) return;
-        OnScenLoadedEvent?.Invoke(this, EventArgs.Empty);
         if (scene.name == Scenes.GameScene_Town.ToString())
         {
             TriggerEvent[] triggerEvents = FindObjectsOfType<TriggerEvent>();
@@ -60,6 +59,7 @@ public class SceneLoader : MonoBehaviour
                 SoundManager.Instance.PlayTeleport(player.transform.position, 3);
             }
         }
+        OnScenLoadedEvent?.Invoke(this, EventArgs.Empty);
     }
 
     public static void LoadScene(Scenes scene)

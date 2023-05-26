@@ -188,12 +188,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptedQuests:
-  - title: Crystal Hunt
-    requiredItems:
-    - {fileID: 11400000, guid: bd6cae10c21f0de46a192a231c4a16ab, type: 2}
-    - {fileID: 11400000, guid: 64e416dc1e359414587e5bfb85d97506, type: 2}
-    - {fileID: 11400000, guid: 99429b49cf88c7d4da150763cecb8623, type: 2}
-    isComplete: 0
+  - {fileID: 11400000, guid: fff2b93efcf191149804c6c0ecab18e8, type: 2}
+  - {fileID: 11400000, guid: 8e15f037ed4c2244893da8de54815319, type: 2}
+  - {fileID: 11400000, guid: 31fb93bde49d8cf439d26e140972921a, type: 2}
 --- !u!114 &1264179273
 MonoBehaviour:
   m_ObjectHideFlags: 0

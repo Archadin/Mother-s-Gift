@@ -54,10 +54,12 @@ public class TriggerEvent : MonoBehaviour
     public void SaveTriggerPrefs()
     {
         PlayerPrefs.SetInt(triggerPrefs, canTravel ? 1 : 0);
+        PlayerPrefs.Save();
     }
 
     public void LoadTriggerPrefs()
     {
-        canTravel = PlayerPrefs.GetInt(triggerPrefs) == 1 ? true : false;
+        SetCanTravel(PlayerPrefs.GetInt(triggerPrefs) == 1 ? true : false);
+        Debug.Log($"Loading: {triggerPrefs} {canTravel}");
     }
 }
