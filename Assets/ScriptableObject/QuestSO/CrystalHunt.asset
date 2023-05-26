@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19694235a9f43d041b94948856de484d, type: 3}
+  m_Name: CrystalHunt
+  m_EditorClassIdentifier: 
+  title: Crystal Hunt
+  isActive: 0
+  requiredItems:
+  - {fileID: 11400000, guid: bd6cae10c21f0de46a192a231c4a16ab, type: 2}
+  - {fileID: 11400000, guid: 64e416dc1e359414587e5bfb85d97506, type: 2}
+  - {fileID: 11400000, guid: 99429b49cf88c7d4da150763cecb8623, type: 2}
+  isComplete: 0

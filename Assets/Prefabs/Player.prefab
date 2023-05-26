@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7098574482149435349}
   - component: {fileID: 7098574482149435348}
   - component: {fileID: 7098574482149435351}
+  - component: {fileID: 1264179273}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -751458773, guid: 955749dce60ff3349911339516321c0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -104,10 +105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  upSprite: {fileID: 155921376, guid: 955749dce60ff3349911339516321c0e, type: 3}
-  downSprite: {fileID: 2011669925, guid: 955749dce60ff3349911339516321c0e, type: 3}
-  rightSprite: {fileID: -751458773, guid: 955749dce60ff3349911339516321c0e, type: 3}
-  leftSprite: {fileID: 401906359, guid: 955749dce60ff3349911339516321c0e, type: 3}
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -197,6 +194,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 64e416dc1e359414587e5bfb85d97506, type: 2}
     - {fileID: 11400000, guid: 99429b49cf88c7d4da150763cecb8623, type: 2}
     isComplete: 0
+--- !u!114 &1264179273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7098574482149435358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001b4a2686fdcf14b85fc97f930d5027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioClipRefs: {fileID: 11400000, guid: e53d1660c48f3ba4bba88073c950a0c8, type: 2}
 --- !u!1 &7098574482390391804
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7098574482390391807
 Transform:
   m_ObjectHideFlags: 0

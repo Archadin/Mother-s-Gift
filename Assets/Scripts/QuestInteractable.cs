@@ -7,12 +7,27 @@ public class QuestInteractable : MonoBehaviour, IInteractable
     public void Interact()
     {
         //add quest item to quets tracker. turn bool on. first make the quest tracker class.
-        questItemSO.isFound = true;
-        QuestTracker.Instace.CheckQuestProgress(questItemSO);
+        questItemSO.isFound = QuestManager.Instace.CheckQuestProgress(questItemSO);
+
+        if (questItemSO.isFound)
+        {
+            Hide();
+        }
     }
 
     private void Start()
     {
         gameObject.layer = 6;
+        Show();
+    }
+
+    private void Show()
+    {
+        gameObject.SetActive(true);
+    }
+
+    private void Hide()
+    {
+        gameObject.SetActive(false);
     }
 }

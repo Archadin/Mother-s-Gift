@@ -1234,6 +1234,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
+      propertyPath: triggerPrefs
+      value: Town_To_House
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
       propertyPath: enterPosition
       value: 
       objectReference: {fileID: 1909839583}
@@ -13002,6 +13006,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
+      propertyPath: triggerPrefs
+      value: Town_To_Guild
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
       propertyPath: enterPosition
       value: 
       objectReference: {fileID: 866706180}
@@ -23446,6 +23454,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
+      propertyPath: triggerPrefs
+      value: Town_To_Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
       propertyPath: enterPosition
       value: 
       objectReference: {fileID: 65876797}
@@ -23521,6 +23533,10 @@ PrefabInstance:
     - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
       propertyPath: denyMessage
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
+      propertyPath: triggerPrefs
+      value: Town_To_Bazaar
       objectReference: {fileID: 0}
     - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
       propertyPath: enterPosition

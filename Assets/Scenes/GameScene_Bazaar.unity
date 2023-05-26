@@ -3017,6 +3017,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
+      propertyPath: triggerPrefs
+      value: Bazaar_To_Town
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026652730638072971, guid: a4f6ecdc75145754b86ab14d271c93a9, type: 3}
       propertyPath: enterPosition
       value: 
       objectReference: {fileID: 962971832395109938}

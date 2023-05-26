@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public event EventHandler OnScenLoadedEvent;
+
     public static SceneLoader Instance;
     [SerializeField] private TriggerEvent thisisit;
     [SerializeField] private CharacterController player;
@@ -32,7 +35,7 @@ public class SceneLoader : MonoBehaviour
     {
         if (previousScene == null) return;
         if (player == null) return;
-
+        OnScenLoadedEvent?.Invoke(this, EventArgs.Empty);
         if (scene.name == Scenes.GameScene_Town.ToString())
         {
             TriggerEvent[] triggerEvents = FindObjectsOfType<TriggerEvent>();
@@ -42,6 +45,8 @@ public class SceneLoader : MonoBehaviour
                 if (enter.GetScene().ToString() == previousScene)
                 {
                     player.transform.position = enter.GetEnterPosition();
+                    player.EnableSpriteMask();
+                    SoundManager.Instance.PlayTeleport(player.transform.position, 3);
                 }
             }
         }
@@ -51,6 +56,8 @@ public class SceneLoader : MonoBehaviour
             if (triggerEvent != null)
             {
                 player.transform.position = triggerEvent.GetEnterPosition();
+                player.DisableSpriteMask();
+                SoundManager.Instance.PlayTeleport(player.transform.position, 3);
             }
         }
     }

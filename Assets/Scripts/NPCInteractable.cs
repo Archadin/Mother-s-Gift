@@ -17,16 +17,14 @@ public class NPCInteractable : MonoBehaviour, IInteractable
         public List<Line> lines;
         public bool converationRepeats;
         public bool FinishedConverstaion;
+        public UnityEvent OnConversationFinishedEvent;
     }
 
     public event EventHandler OnInteractEvent;
 
     public event EventHandler OnLinesFinished;
 
-    public UnityEvent OnConversationFinishedEvent;
-
     [SerializeField] private List<Conversation> Conversations = new List<Conversation>();
-    [SerializeField] private List<List<Line>> Lines2 = new List<List<Line>>();
 
     // a field for text and text buble. that asks for player input.
 
@@ -50,12 +48,12 @@ public class NPCInteractable : MonoBehaviour, IInteractable
             print("finished");
             currentConv.FinishedConverstaion = true;
             LineIndex = 0;
-            if (!currentConv.converationRepeats)
+            if (!currentConv.converationRepeats || Conversations.Count > 1)
             {
                 conversationIndex++;
             }
             OnLinesFinished?.Invoke(this, EventArgs.Empty);
-            OnConversationFinishedEvent?.Invoke();
+            currentConv.OnConversationFinishedEvent?.Invoke();
             return;
         }
         OnInteractEvent?.Invoke(this, EventArgs.Empty);

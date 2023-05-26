@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
 
     private Vector2 movement;
     private Vector2 lastMovement;
-
+    private SpriteMask spriteMask;
     [SerializeField] private LayerMask interactableLayer;
 
     private void Awake()
@@ -29,19 +29,16 @@ public class CharacterController : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-    }
-
-    // Start is called before the first frame update
-    private void Start()
-    {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        spriteMask = GetComponentInChildren<SpriteMask>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        RaycastHit2D hit2D = Physics2D.CircleCast(transform.position, 1, Vector2.down, 1, layerMask: interactableLayer);
+        Vector2 direction = lastMovement;
+        RaycastHit2D hit2D = Physics2D.CircleCast(transform.position, 1, direction, 1, interactableLayer);
         if (Input.GetKeyDown(KeyCode.E))
         {
             //RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.down * 2,interactableLayer);
@@ -77,5 +74,15 @@ public class CharacterController : MonoBehaviour
     private void FixedUpdate()
     {
         rb2D.MovePosition(rb2D.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void EnableSpriteMask()
+    {
+        spriteMask.gameObject.SetActive(true);
+    }
+
+    public void DisableSpriteMask()
+    {
+        spriteMask.gameObject.SetActive(false);
     }
 }

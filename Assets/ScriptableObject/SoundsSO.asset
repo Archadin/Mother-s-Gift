@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255fe74ed2532f349be8653b7ad23fdf, type: 3}
+  m_Name: SoundsSO
+  m_EditorClassIdentifier: 
+  footsteps:
+  - {fileID: 8300000, guid: b11f8379efd497d43a4da7509e0c36cb, type: 3}
+  instrument: {fileID: 0}
+  pickup: {fileID: 8300000, guid: bd9924c3b645f5f44bef56990b90f8d9, type: 3}
+  menu: {fileID: 8300000, guid: b0cc96660964b064c906c6f501bbd93c, type: 3}
+  teleport: {fileID: 8300000, guid: 164298ff580eab64cba2995b6c4bd502, type: 3}
