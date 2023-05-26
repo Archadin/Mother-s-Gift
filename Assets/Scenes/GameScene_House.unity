@@ -15482,37 +15482,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5548317127205853008, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
-      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5548317127205853008, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
-      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5548317127205853008, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
       propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1141881367}
-    - target: {fileID: 5548317127205853008, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
-      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1141881367}
-    - target: {fileID: 5548317127205853008, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
-      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateQuests
-      objectReference: {fileID: 0}
-    - target: {fileID: 5548317127205853008, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
-      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: QuestManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5548317127205853008, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
-      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 11400000, guid: fff2b93efcf191149804c6c0ecab18e8, type: 2}
-    - target: {fileID: 5548317127205853008, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
-      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: QuestSO, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 5548317127205853011, guid: 8e175a92f99c25947b63e3e80295a9fc, type: 3}
       propertyPath: m_RootOrder
       value: 2

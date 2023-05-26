@@ -87,6 +87,7 @@ public class CharacterController : MonoBehaviour
 
     public void DisableMovement()
     {
+        animator.SetFloat(SPEED, 0);
         canMove = false;
     }
 

@@ -50,7 +50,7 @@ public class NPCInteractable : MonoBehaviour, IInteractable
             currentConv.FinishedConverstaion = true;
             CharacterController.Instance.EnableMovement();
             LineIndex = 0;
-            if (!currentConv.converationRepeats || Conversations.Count > 1)
+            if (!currentConv.converationRepeats || conversationIndex < Conversations.Count - 1)
             {
                 conversationIndex++;
             }
