@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    private static CharacterController Instance;
+    public static CharacterController Instance;
     private const string IDLE_H = "Idle_H";
     private const string IDLE_V = "Idle_V";
     private const string SPEED = "Speed";
@@ -17,6 +17,7 @@ public class CharacterController : MonoBehaviour
     private Vector2 lastMovement;
     private SpriteMask spriteMask;
     [SerializeField] private LayerMask interactableLayer;
+    private bool canMove = true;
 
     private void Awake()
     {
@@ -32,6 +33,7 @@ public class CharacterController : MonoBehaviour
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         spriteMask = GetComponentInChildren<SpriteMask>();
+        EnableMovement();
     }
 
     // Update is called once per frame
@@ -47,6 +49,8 @@ public class CharacterController : MonoBehaviour
                 interactable.Interact();
             }
         }
+
+        if (!canMove) return;
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -74,6 +78,16 @@ public class CharacterController : MonoBehaviour
     private void FixedUpdate()
     {
         rb2D.MovePosition(rb2D.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void EnableMovement()
+    {
+        canMove = true;
+    }
+
+    public void DisableMovement()
+    {
+        canMove = false;
     }
 
     public void EnableSpriteMask()

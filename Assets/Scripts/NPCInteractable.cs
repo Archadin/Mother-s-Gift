@@ -37,6 +37,7 @@ public class NPCInteractable : MonoBehaviour, IInteractable
     {
         if (Conversations.Count == 0) return;
         if (!canInteract) return;
+        CharacterController.Instance.DisableMovement();
         // get current conversation
         Debug.LogWarning("conv:" + conversationIndex);
         Conversation currentConv = Conversations[conversationIndex];
@@ -47,6 +48,7 @@ public class NPCInteractable : MonoBehaviour, IInteractable
         {
             print("finished");
             currentConv.FinishedConverstaion = true;
+            CharacterController.Instance.EnableMovement();
             LineIndex = 0;
             if (!currentConv.converationRepeats || Conversations.Count > 1)
             {
@@ -58,9 +60,7 @@ public class NPCInteractable : MonoBehaviour, IInteractable
         }
         OnInteractEvent?.Invoke(this, EventArgs.Empty);
 
-        Debug.LogWarning("line: " + LineIndex);
         LineIndex++;
-        Debug.LogWarning("line after: " + LineIndex);
     }
 
     public void SetCanInteract(bool enabled)
