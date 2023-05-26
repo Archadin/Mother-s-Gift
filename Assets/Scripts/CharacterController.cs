@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+    private static CharacterController Instance;
     private const string IDLE_H = "Idle_H";
     private const string IDLE_V = "Idle_V";
     private const string SPEED = "Speed";
@@ -11,26 +12,28 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     private Rigidbody2D rb2D;
     private Animator animator;
-    private SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
     private Vector2 lastMovement;
 
-    [SerializeField] private Sprite upSprite;
-    [SerializeField] private Sprite downSprite;
-    [SerializeField] private Sprite rightSprite;
-    [SerializeField] private Sprite leftSprite;
     [SerializeField] private LayerMask interactableLayer;
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
     }
