@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    public static CharacterController Instance;
+
+    public static PlayerMovement Instance;
     private const string IDLE_H = "Idle_H";
     private const string IDLE_V = "Idle_V";
     private const string SPEED = "Speed";
@@ -82,11 +83,13 @@ public class CharacterController : MonoBehaviour
 
     public void EnableMovement()
     {
+        Debug.Log("Movement Enabled");
         canMove = true;
     }
 
     public void DisableMovement()
     {
+        Debug.Log("Movement Disabled");
         animator.SetFloat(SPEED, 0);
         canMove = false;
     }

@@ -18,3 +18,4 @@ MonoBehaviour:
   pickup: {fileID: 8300000, guid: bd9924c3b645f5f44bef56990b90f8d9, type: 3}
   menu: {fileID: 8300000, guid: b0cc96660964b064c906c6f501bbd93c, type: 3}
   teleport: {fileID: 8300000, guid: 164298ff580eab64cba2995b6c4bd502, type: 3}
+  gold: {fileID: 8300000, guid: 8b52578823786cd438122a05039dc8e9, type: 3}

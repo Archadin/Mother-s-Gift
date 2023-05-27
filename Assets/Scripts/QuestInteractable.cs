@@ -11,6 +11,7 @@ public class QuestInteractable : MonoBehaviour, IInteractable
 
         if (questItemSO.isFound)
         {
+            QuestManager.Instace.QuestUpdated();
             Hide();
         }
     }
@@ -28,6 +29,7 @@ public class QuestInteractable : MonoBehaviour, IInteractable
 
     private void Hide()
     {
+        SoundManager.Instance.PlayPickup(transform.position, 1);
         gameObject.SetActive(false);
     }
 }

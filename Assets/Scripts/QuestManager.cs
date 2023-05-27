@@ -1,8 +1,20 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    public class QuestAcceptedEventEventArgs : EventArgs
+    {
+        public QuestSO acceptedQuest;
+    }
+
+    public event EventHandler<QuestAcceptedEventEventArgs> OnQuestAccepted;
+
+    public event EventHandler OnQuestUpdated;
+
+    public event EventHandler OnQuestCompleted;
+
     public static QuestManager Instace;
     [SerializeField] private List<QuestSO> acceptedQuests = new List<QuestSO>();
 
@@ -20,8 +32,11 @@ public class QuestManager : MonoBehaviour
                 if (!quest.isActive) return false;
                 if (quest.CheckQuestComplete())
                 {
-                    print(quest.title + " is Completed!");
-                    print(quest.isComplete);
+                    if (quest.isComplete)
+                    {
+                        SoundManager.Instance.PlayInstrument(transform.position, 1);
+                        OnQuestCompleted?.Invoke(this, EventArgs.Empty);
+                    }
                 }
                 return true;
             }
@@ -29,8 +44,15 @@ public class QuestManager : MonoBehaviour
         return false;
     }
 
+    public void QuestUpdated()
+    {
+        OnQuestUpdated?.Invoke(this, EventArgs.Empty);
+    }
+
     public void ActivateQuests(QuestSO quest)
     {
+        if (quest.isActive) return;
         quest.isActive = true;
+        OnQuestAccepted?.Invoke(this, new QuestAcceptedEventEventArgs { acceptedQuest = quest });
     }
 }

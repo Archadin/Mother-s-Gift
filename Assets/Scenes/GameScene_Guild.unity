@@ -6924,6 +6924,67 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: canInteract
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].lines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].lines.Array.data[0].line
+      value: Hello.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].lines.Array.data[1].line
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].lines.Array.data[2].line
+      value: I understand. But sadly the milk in this town is quite pricey.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].lines.Array.data[3].line
+      value: If you want we have some quest that can help you make some gold.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].lines.Array.data[4].line
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].lines.Array.data[5].line
+      value: Alright. Complete these quests and you should have enough gold to buy
+        milk.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548317127205853008, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
+      propertyPath: Conversations.Array.data[0].OnConversationFinishedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5548317127205853010, guid: 8eb9f0edb583e704196549b7d9fe6272, type: 3}
       propertyPath: m_SortingOrder
       value: 0

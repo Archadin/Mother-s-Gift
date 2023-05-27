@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: CrystalHunt
   m_EditorClassIdentifier: 
   title: Crystal Hunt
+  description: There are 3 crystals in the forest.Guild needs them. Collect them
+    from the forest.
   isActive: 0
   requiredItems:
   - {fileID: 11400000, guid: bd6cae10c21f0de46a192a231c4a16ab, type: 2}
   - {fileID: 11400000, guid: 64e416dc1e359414587e5bfb85d97506, type: 2}
   - {fileID: 11400000, guid: 99429b49cf88c7d4da150763cecb8623, type: 2}
   isComplete: 0
+  reward: 0
+  rewardGiven: 0

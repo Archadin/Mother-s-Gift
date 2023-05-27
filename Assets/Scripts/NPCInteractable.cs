@@ -6,17 +6,12 @@ using UnityEngine.Events;
 public class NPCInteractable : MonoBehaviour, IInteractable
 {
     [System.Serializable]
-    private struct Line
-    {
-        public string line;
-    }
-
-    [System.Serializable]
     private struct Conversation
     {
-        public List<Line> lines;
+        public bool isLocked;
+        public List<string> lines;
         public bool converationRepeats;
-        public bool FinishedConverstaion;
+        public bool conversationEnded;
         public UnityEvent OnConversationFinishedEvent;
     }
 
@@ -25,7 +20,7 @@ public class NPCInteractable : MonoBehaviour, IInteractable
     public event EventHandler OnLinesFinished;
 
     [SerializeField] private List<Conversation> Conversations = new List<Conversation>();
-
+    private Conversation currentConv;
     // a field for text and text buble. that asks for player input.
 
     private int LineIndex = 0;
@@ -37,30 +32,31 @@ public class NPCInteractable : MonoBehaviour, IInteractable
     {
         if (Conversations.Count == 0) return;
         if (!canInteract) return;
-        CharacterController.Instance.DisableMovement();
         // get current conversation
-        Debug.LogWarning("conv:" + conversationIndex);
-        Conversation currentConv = Conversations[conversationIndex];
+        currentConv = Conversations[conversationIndex];
 
-        //if the currentLine is higher than the count of lines in the conversation finish it.
-        print(LineIndex > currentConv.lines.Count - 1);
-        if (LineIndex > currentConv.lines.Count - 1)
+        if (!currentConv.isLocked)
         {
-            print("finished");
-            currentConv.FinishedConverstaion = true;
-            CharacterController.Instance.EnableMovement();
-            LineIndex = 0;
-            if (!currentConv.converationRepeats || conversationIndex < Conversations.Count - 1)
-            {
-                conversationIndex++;
-            }
-            OnLinesFinished?.Invoke(this, EventArgs.Empty);
-            currentConv.OnConversationFinishedEvent?.Invoke();
-            return;
-        }
-        OnInteractEvent?.Invoke(this, EventArgs.Empty);
+            PlayerMovement.Instance.DisableMovement();
 
-        LineIndex++;
+            //if the currentLine is higher than the count of lines in the conversation finish it.
+            if (LineIndex > currentConv.lines.Count - 1)
+            {
+                currentConv.conversationEnded = true;
+                PlayerMovement.Instance.EnableMovement();
+                LineIndex = 0;
+                if (!currentConv.converationRepeats || conversationIndex < Conversations.Count - 1)
+                {
+                    conversationIndex++;
+                }
+                OnLinesFinished?.Invoke(this, EventArgs.Empty);
+                currentConv.OnConversationFinishedEvent?.Invoke();
+                return;
+            }
+            OnInteractEvent?.Invoke(this, EventArgs.Empty);
+
+            LineIndex++;
+        }
     }
 
     public void SetCanInteract(bool enabled)
@@ -70,8 +66,10 @@ public class NPCInteractable : MonoBehaviour, IInteractable
 
     public string GetCurrentLine()
     {
+        if (currentConv.conversationEnded) return null;
+        if (currentConv.isLocked) return null;
         // if conversation is not finished. return the line.
-        if (Conversations[conversationIndex].FinishedConverstaion) return null;
-        return Conversations[conversationIndex].lines[LineIndex].line;
+        if (Conversations[conversationIndex].conversationEnded) return null;
+        return Conversations[conversationIndex].lines[LineIndex];
     }
 }

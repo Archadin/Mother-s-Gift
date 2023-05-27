@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PurpleCrystal
   m_EditorClassIdentifier: 
   Name: Purple Crystal
-  isFound: 0
+  isFound: 1

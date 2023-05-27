@@ -19,21 +19,30 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void PlayFootsteps()
+    public void PlayFootstepsEmpty()
     {
         int index = Random.Range(0, AudioClipRefs.footsteps.Length);
         PlaySound(AudioClipRefs.footsteps[index], transform.position, volume);
     }
 
+    public void PlayInstrument(Vector3 position, float volumeMultiplier)
+    {
+        PlaySound(AudioClipRefs.instrument, position, volumeMultiplier * volume);
+    }
+
+    public void PlayGold(Vector3 position, float volumeMultiplier)
+    {
+        PlaySound(AudioClipRefs.gold, position, volumeMultiplier * volume);
+    }
+
+    public void PlayPickup(Vector3 position, float volumeMultiplier)
+    {
+        PlaySound(AudioClipRefs.pickup, position, volumeMultiplier * volume);
+    }
+
     public void PlayTeleport(Vector3 position, float volumeMultiplier)
     {
         PlaySound(AudioClipRefs.teleport, position, volumeMultiplier * volume);
-    }
-
-    public void PlayFootsteps(Vector3 position, float volumeMultiplier)
-    {
-        int index = Random.Range(0, AudioClipRefs.footsteps.Length);
-        PlaySound(AudioClipRefs.footsteps[index], position, volumeMultiplier * volume);
     }
 
     private void PlaySound(AudioClip audioClip, Vector3 position, float volumeMultiplier = 1.0f)

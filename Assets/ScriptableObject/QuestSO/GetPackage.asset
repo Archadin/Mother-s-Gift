@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: GetPackage
   m_EditorClassIdentifier: 
   title: Get Package
+  description: There is a hidden package in town. Find it and bring it back.
   isActive: 0
   requiredItems:
-  - {fileID: 11400000, guid: 99429b49cf88c7d4da150763cecb8623, type: 2}
+  - {fileID: 11400000, guid: 12a9f6f0ea0fefb4398420ef0d589762, type: 2}
   isComplete: 0
+  reward: 0
+  rewardGiven: 0

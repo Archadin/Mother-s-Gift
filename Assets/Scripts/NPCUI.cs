@@ -22,9 +22,11 @@ public class NPCUI : MonoBehaviour
 
     private void NPC_OnInteractEvent(object sender, System.EventArgs e)
     {
-        Show();
-
-        text.SetText(NPC.GetCurrentLine());
+        if (!string.IsNullOrEmpty(NPC.GetCurrentLine()))
+        {
+            Show();
+            text.SetText(NPC.GetCurrentLine());
+        }
     }
 
     private void Show()

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: YellowCrystal
   m_EditorClassIdentifier: 
   Name: Yellow Crystal
-  isFound: 0
+  isFound: 1

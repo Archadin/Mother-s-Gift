@@ -6,9 +6,13 @@ using UnityEngine;
 public class QuestSO : ScriptableObject
 {
     public string title;
+    public string description;
     public bool isActive;
     public List<QuestItemSO> requiredItems;
     public bool isComplete;
+    public int reward;
+    public bool rewardGiven;
+
 
     public bool CheckQuestComplete()
     {

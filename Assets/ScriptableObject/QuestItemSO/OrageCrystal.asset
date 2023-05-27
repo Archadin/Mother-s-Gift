@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: OrageCrystal
   m_EditorClassIdentifier: 
   Name: OrageCrystal
-  isFound: 0
+  isFound: 1

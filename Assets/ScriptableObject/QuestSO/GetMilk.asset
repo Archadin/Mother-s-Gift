@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19694235a9f43d041b94948856de484d, type: 3}
   m_Name: GetMilk
   m_EditorClassIdentifier: 
-  title: GetMilk
-  isActive: 0
+  title: Get Milk
+  description: There is no milk left at home. We cant have cereal without milk. Find
+    some milk to save the breakfast.
+  isActive: 1
   requiredItems:
   - {fileID: 11400000, guid: 019b66eb13c0a1a4c9b65d922bf55208, type: 2}
   isComplete: 0
+  reward: 20
+  rewardGiven: 1
