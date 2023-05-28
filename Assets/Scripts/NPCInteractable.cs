@@ -1,20 +1,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class NPCInteractable : MonoBehaviour, IInteractable
 {
-    [System.Serializable]
-    private struct Conversation
-    {
-        public bool isLocked;
-        public List<string> lines;
-        public bool converationRepeats;
-        public bool conversationEnded;
-        public UnityEvent OnConversationFinishedEvent;
-    }
-
     public event EventHandler OnInteractEvent;
 
     public event EventHandler OnLinesFinished;

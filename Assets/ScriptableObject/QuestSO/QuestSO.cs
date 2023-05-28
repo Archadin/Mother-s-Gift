@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "QuestSO", menuName = "ScriptableObjects/Quest")]
 public class QuestSO : ScriptableObject
@@ -12,7 +13,7 @@ public class QuestSO : ScriptableObject
     public bool isComplete;
     public int reward;
     public bool rewardGiven;
-
+    public UnityEvent OnQuestComplete;
 
     public bool CheckQuestComplete()
     {
@@ -24,6 +25,7 @@ public class QuestSO : ScriptableObject
                 return false;
             }
             isComplete = true;
+            OnQuestComplete?.Invoke();
         }
         return isComplete;
     }

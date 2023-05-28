@@ -22,12 +22,10 @@ public class TriggerEvent : MonoBehaviour
                     firstTrigger = true;
                     OnTrigerredFirstTime?.Invoke();
                 }
-
-                TeleportManager.Instance.LoadScene(exitPosition);
-            }
-            else
-            {
-                Debug.Log(denyMessage);
+                if (exitPosition != null)
+                {
+                    TeleportManager.Instance.LoadScene(exitPosition);
+                }
             }
         }
     }

@@ -10,6 +10,7 @@ public class QuestManager : MonoBehaviour
     }
 
     public event EventHandler<QuestAcceptedEventEventArgs> OnQuestAccepted;
+    public event EventHandler<QuestAcceptedEventEventArgs> OnQuestDropped;
 
     public event EventHandler OnQuestUpdated;
 
@@ -55,4 +56,13 @@ public class QuestManager : MonoBehaviour
         quest.isActive = true;
         OnQuestAccepted?.Invoke(this, new QuestAcceptedEventEventArgs { acceptedQuest = quest });
     }
+
+
+    public void DeactivateQuests(QuestSO quest)
+    {
+        if (!quest.isActive) return;
+        quest.isActive = false;
+        OnQuestDropped?.Invoke(this, new QuestAcceptedEventEventArgs { acceptedQuest = quest });
+    }
+
 }

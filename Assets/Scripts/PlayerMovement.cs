@@ -1,8 +1,8 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public static PlayerMovement Instance;
     private const string IDLE_H = "Idle_H";
     private const string IDLE_V = "Idle_V";
@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private const string VERTICAL = "Vertical";
 
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float maskSpeed = 2f;
     private Rigidbody2D rb2D;
     private Animator animator;
 
@@ -30,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         spriteMask = GetComponentInChildren<SpriteMask>();
@@ -89,6 +89,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void DisableMovement()
     {
+        lastMovement = Vector2.zero;
+        movement = Vector2.zero;
+        rb2D.velocity = Vector2.zero;
         Debug.Log("Movement Disabled");
         animator.SetFloat(SPEED, 0);
         canMove = false;
@@ -97,6 +100,18 @@ public class PlayerMovement : MonoBehaviour
     public void EnableSpriteMask()
     {
         spriteMask.gameObject.SetActive(true);
+        StartCoroutine(IncreaseSize());
+    }
+
+    private IEnumerator IncreaseSize()
+    {
+        while (spriteMask.gameObject.transform.localScale.x < 35)
+        {
+            DisableMovement();
+            spriteMask.gameObject.transform.localScale += Vector3.one * maskSpeed * Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        EnableMovement();
     }
 
     public void DisableSpriteMask()

@@ -13,6 +13,12 @@ public class QuestUI : MonoBehaviour
     private void Start()
     {
         QuestManager.Instace.OnQuestUpdated += QuestManager_OnQuestUpdated;
+        QuestManager.Instace.OnQuestDropped += QuestManager_OnQuestDropped;
+    }
+
+    private void QuestManager_OnQuestDropped(object sender, QuestManager.QuestAcceptedEventEventArgs e)
+    {
+        gameObject.SetActive(false);
     }
 
     private void QuestManager_OnQuestUpdated(object sender, System.EventArgs e)

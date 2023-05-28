@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class QuestInteractable : MonoBehaviour, IInteractable
 {
     [SerializeField] private QuestItemSO questItemSO;
+    [SerializeField] private UnityEvent OnPickupEvent;
 
     public void Interact()
     {
@@ -12,6 +14,7 @@ public class QuestInteractable : MonoBehaviour, IInteractable
         if (questItemSO.isFound)
         {
             QuestManager.Instace.QuestUpdated();
+            OnPickupEvent?.Invoke();
             Hide();
         }
     }
