@@ -1,6 +1,6 @@
 using System;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TeleportManager : MonoBehaviour
 {
@@ -20,6 +20,8 @@ public class TeleportManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+   
 
     private void Teleport(Transform transform)
     {

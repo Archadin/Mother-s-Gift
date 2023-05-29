@@ -32,7 +32,13 @@ public class QuestInteractable : MonoBehaviour, IInteractable
 
     private void Hide()
     {
+        questItemSO.isFound = QuestManager.Instace.CheckQuestProgress(questItemSO);
         SoundManager.Instance.PlayPickup(transform.position, 1);
         gameObject.SetActive(false);
+    }
+
+    public string GetItemName()
+    {
+        return questItemSO.Name;
     }
 }

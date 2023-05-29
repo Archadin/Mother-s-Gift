@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NPCInteractable : MonoBehaviour, IInteractable
 {
@@ -16,6 +17,8 @@ public class NPCInteractable : MonoBehaviour, IInteractable
     private int conversationIndex = 0;
 
     [SerializeField] private bool canInteract = false;
+
+    public UnityEvent NPCQuestFinishedEvent;
 
     public void Interact()
     {
@@ -45,6 +48,22 @@ public class NPCInteractable : MonoBehaviour, IInteractable
             OnInteractEvent?.Invoke(this, EventArgs.Empty);
 
             LineIndex++;
+        }
+    }
+
+    public void SetAndUnlockConversation(int index)
+    {
+        conversationIndex = index;
+        currentConv = Conversations[conversationIndex];
+        currentConv.isLocked = false;
+        Conversations[conversationIndex] = currentConv;
+    }
+
+    public void CheckQuestComplete(QuestSO questSO)
+    {
+        if (questSO.isComplete)
+        {
+            NPCQuestFinishedEvent?.Invoke();
         }
     }
 

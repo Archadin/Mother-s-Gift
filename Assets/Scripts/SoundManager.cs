@@ -3,7 +3,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
-
+    [SerializeField] private AudioSource Music;
     [SerializeField] private SoundsSO AudioClipRefs;
     private float volume = 1f;
 
@@ -17,6 +17,26 @@ public class SoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void SetMusicVolume()
+    {
+        volume = (volume + .1f) % 1.1f;
+        Music.volume = volume;
+    }
+
+    public void ToggleMusic()
+    {
+        Music.mute = !Music.mute;
+    }
+
+    /// <summary>
+    /// Sending true will mute the music.
+    /// </summary>
+    /// <param name="toggle"></param>
+    public void ToggleMusic(bool toggle)
+    {
+        Music.mute = toggle;
     }
 
     public void PlayFootstepsEmpty()

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class QuestManager : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class QuestManager : MonoBehaviour
 
     public event EventHandler OnQuestUpdated;
 
-    public event EventHandler OnQuestCompleted;
+    public UnityEvent OnQuestCompleted;
 
     public static QuestManager Instace;
     [SerializeField] private List<QuestSO> acceptedQuests = new List<QuestSO>();
@@ -35,8 +36,8 @@ public class QuestManager : MonoBehaviour
                 {
                     if (quest.isComplete)
                     {
-                        SoundManager.Instance.PlayInstrument(transform.position, 1);
-                        OnQuestCompleted?.Invoke(this, EventArgs.Empty);
+                        OnQuestCompleted?.Invoke();
+                        //SoundManager.Instance.PlayInstrument(transform.position, 1);
                     }
                 }
                 return true;

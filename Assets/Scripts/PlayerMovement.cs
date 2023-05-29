@@ -83,7 +83,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void EnableMovement()
     {
-        Debug.Log("Movement Enabled");
         canMove = true;
     }
 
@@ -92,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
         lastMovement = Vector2.zero;
         movement = Vector2.zero;
         rb2D.velocity = Vector2.zero;
-        Debug.Log("Movement Disabled");
         animator.SetFloat(SPEED, 0);
         canMove = false;
     }

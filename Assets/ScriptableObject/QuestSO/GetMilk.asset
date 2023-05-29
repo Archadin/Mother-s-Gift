@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: GetMilk
   m_EditorClassIdentifier: 
   title: Get Milk
-  description: There is no milk left at home. We cant have cereal without milk. Find
-    some milk to save the breakfast.
+  description: There is no milk left at home. We can't have cereal without milk!
+    Go and get some milk.
   isActive: 0
   requiredItems:
   - {fileID: 11400000, guid: 019b66eb13c0a1a4c9b65d922bf55208, type: 2}
