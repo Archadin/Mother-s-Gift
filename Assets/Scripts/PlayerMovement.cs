@@ -40,8 +40,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        Vector2 direction = lastMovement;
-        RaycastHit2D hit2D = Physics2D.CircleCast(transform.position, 1, direction, 1, interactableLayer);
+        Vector2 direction = lastMovement.normalized;
+        RaycastHit2D hit2D = Physics2D.CircleCast(transform.position, 2f, direction, 2f, interactableLayer);
         if (Input.GetKeyDown(KeyCode.E))
         {
             //RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.down * 2,interactableLayer);

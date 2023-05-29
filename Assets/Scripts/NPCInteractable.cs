@@ -35,6 +35,7 @@ public class NPCInteractable : MonoBehaviour, IInteractable
             if (LineIndex > currentConv.lines.Count - 1)
             {
                 currentConv.conversationEnded = true;
+                Conversations[conversationIndex] = currentConv;
                 PlayerMovement.Instance.EnableMovement();
                 LineIndex = 0;
                 if (!currentConv.converationRepeats || conversationIndex < Conversations.Count - 1)

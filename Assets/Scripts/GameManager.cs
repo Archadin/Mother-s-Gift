@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button QuitButton;
     [SerializeField] private Button MusicButton;
     [SerializeField] private Button VolumeButton;
+    [SerializeField] private TMPro.TextMeshProUGUI TheEnd;
     [SerializeField] private CanvasGroup FadeInCanvasGroup;
 
     private void Start()
@@ -24,12 +25,31 @@ public class GameManager : MonoBehaviour
     {
         while (FadeInCanvasGroup.alpha > 0)
         {
-            PlayerMovement.Instance.DisableMovement();
-            FadeInCanvasGroup.alpha -= Time.deltaTime;
-            yield return new WaitForSeconds(.01f);
+            FadeInCanvasGroup.alpha -= Time.deltaTime * 3;
+            yield return new WaitForSeconds(.001f);
         }
         PlayerMovement.Instance.EnableMovement();
         SoundManager.Instance.ToggleMusic(false);
+    }
+
+    public void GameEnd()
+    {
+        StartCoroutine(FadeOut());
+    }
+
+    private IEnumerator FadeOut()
+    {
+        PlayerMovement.Instance.DisableMovement();
+        SoundManager.Instance.ToggleMusic(true);
+        while (FadeInCanvasGroup.alpha < 1)
+        {
+            FadeInCanvasGroup.alpha += Time.deltaTime * 3;
+            yield return new WaitForSeconds(.001f);
+        }
+        TheEnd.gameObject.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        // load main menu.
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
     private void Update()
