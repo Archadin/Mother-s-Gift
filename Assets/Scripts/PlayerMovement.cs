@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteMask spriteMask;
     [SerializeField] private LayerMask interactableLayer;
     private bool canMove = true;
+    private Vector2 direction;
 
     private void Awake()
     {
@@ -40,8 +41,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        Vector2 direction = lastMovement.normalized;
-        RaycastHit2D hit2D = Physics2D.CircleCast(transform.position, 2f, direction, 2f, interactableLayer);
+        if (lastMovement != Vector2.zero)
+        {
+            direction = lastMovement.normalized;
+        }
+        RaycastHit2D hit2D = Physics2D.CircleCast(transform.position, .8f, direction, .8f, interactableLayer);
         if (Input.GetKeyDown(KeyCode.E))
         {
             //RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.down * 2,interactableLayer);
